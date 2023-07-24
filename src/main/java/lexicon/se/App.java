@@ -1,6 +1,8 @@
 package lexicon.se;
 
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -12,7 +14,7 @@ public class App {
     // this is the main method -not allow to change it
 
     public static void main(String[] args) {
- /*
+        /*
         System.out.println("Hello World!");
 
         int age = 30;
@@ -72,6 +74,7 @@ public class App {
         }   else {
             System.out.println("You cannot have a beer!");
         }*/
+
         /*
         if (age >= 18) {
             System.out.println("You can have a beet!");
@@ -111,6 +114,7 @@ public class App {
         System.out.println(name.toLowerCase());
      */
 
+        /*
 
    person erik= new person();
     erik.firstName ="Erik";
@@ -125,6 +129,33 @@ public class App {
     mehrdad.age = 34;
     mehrdad.hobby = "programing";
     System.out.println(mehrdad.getInformation());
+*/
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter number1:");
+
+
+        System.out.println("Enter number2:");
+
+
+    }
+
+    public static int addition(int n1, int n2) {
+        return n1 + n2;
+    }
+
+    public static void displayMenu() {
+        System.out.println("1. Addition");
+        System.out.println("2.Subtraction");
+        System.out.println("0.Terminate application");
+    }
+
+    // ctrl +Alt +l
+    public static String getShortestWord(String word1, String word2) {
+        if (word1.length() < word2.length()) {
+            return word1;
+        } else {
+            return word2;
+        }
     }
 }
