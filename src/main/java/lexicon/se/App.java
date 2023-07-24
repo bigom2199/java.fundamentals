@@ -132,10 +132,16 @@ public class App {
 */
 
         Scanner scanner = new Scanner(System.in);
+
+        int number1 =scanner.nextInt();
         System.out.println("Enter number1:");
 
 
         System.out.println("Enter number2:");
+        int number2 = scanner.nextInt();
+
+        int result = addition(number1, number2);
+        System.out.println(result);
 
 
     }
